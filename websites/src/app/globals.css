@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup-menu>li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+.popup-menu>li:last-child{
+  border-bottom: none;
+}
+.profile input, textarea{
+  border:1px solid #ededed;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  color: rgb(226 232 240);
+  font-weight: bold;
+  margin-top:10px;
+  color: #0a0a0a;
+  resize: none;
+}
+.profile p{
+  margin-top:12px;
+  color:#918e8e
+}
+.spinner {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
